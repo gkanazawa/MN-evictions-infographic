@@ -1,0 +1,194 @@
+.att-footer {
+  font-size: 0.8rem;
+}
+
+.accordion {
+  width: 800px;
+  height: 600px;
+}
+
+.accordion-button {
+  background-color: #393e46 !important;
+  font-weight: bold;
+  width: 300px;
+}
+
+body{
+  display: block;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: none;
+}
+
+.bottom-container {
+  background-color: #333333;
+  text-align: center;
+  padding: 30px 0 20px;
+}
+
+.center {
+  display: block;
+  margin: 30px auto;
+  width: 70%;
+}
+
+.collapsed1 {
+  color: #fff;
+}
+
+.collapsed2 {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: none;
+  padding-bottom: 30px;
+}
+
+.endcredit {
+  font-size: 1rem;
+  margin: 40px auto 10px;
+  color: #bdc7c9;
+}
+
+.footer-link {
+  font-weight: bold;
+  margin: 60px 40px;
+  color: #fed049;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: #5c8d89;
+}
+
+.gratBackground {
+	fill: #7FDBFF;
+}
+
+h1 {
+  font-size: 2.8rem;
+  padding-top: 10px;
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.7rem;
+  padding-bottom: 20px;
+}
+
+h6 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.header {
+  width: 95%;
+  height:900px;
+  background: url('../img/eviction1.jpg') no-repeat;
+  background-size: cover;
+  justify-content: center;
+  padding: 20px auto;
+  bottom: 0;
+}
+
+hr {
+  width: 50%;
+  margin: 2% auto;
+}
+
+#intro {
+  font-size: 1.3em;
+  padding-top: 80px;
+}
+
+.legend-column {
+  float: left;
+  width: 600px;
+  padding-top: 10px;
+}
+
+.map-row {
+  position: absolute;
+  padding-top: 5vh;
+}
+
+.map {
+	border: medium solid #32401D;
+  margin: 10px 20px 0 20px;
+}
+
+.map-container {
+  display: flex;
+  /* height: 50%;
+  width: 70%; */
+  justify-content: center;
+  align-items: center;
+  margin: none;
+}
+
+.p3 {
+  padding: 10px 20%;
+}
+
+.provinces {
+  fill: #393e46;
+  stroke: #CCC;
+  stroke-width: 2px;
+}
+
+.retrieveContainer {
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.retrievePanel {
+  width: 300px;
+  background-color: #393e46;
+  position: relative;
+  text-align: left;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 5px;
+  pointer-events: none;
+  color: #fff;
+  font-size: 10pt;
+  opacity: 90%;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+#sankeydesc {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.states {
+	fill: #393e46;
+	stroke: #CCC;
+	stroke-width: 2px;
+}
+
+#strib1 {
+  padding-left: 30px;
+}
+
+.tracts {
+  stroke: #393e46;
+  stroke-width: .15px;
+  stroke-linecap: round;
+}
+
+li {
+  margin: 10px 0px 0px 440px;
+}

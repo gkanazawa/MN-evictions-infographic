@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MN Evictions 2020</title>
+    <!-- Bootstrap CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- <script type="text/javascript" src="lib/leaflet/leaflet.js"></script> -->
+
+  </head>
+
+  <body>
+
+    <div class="header" style="display: table">
+        <div class="container-fluid">
+            <h1>Minnesota's Eviction Moratorium</h1>
+            <h6> <em>Protections, Questions, and Where Evictions are Still Happening</em> </h6>
+        </div>
+      </div>
+
+    <section id="intro">
+      <div class="container">
+        <p class="top-desc"><b>As COVID-19 was developing</b> into a full-scale pandemic, many states’
+          governors issued executive orders banning landlords from evicting tenants, and the CDC ordered a nationwide eviction moratorium in September.
+          In Minnesota, Gov. Walz issued this order on March 23, 2020, to be in effect throughout the duration of the peacetime state of emergency.</p>
+      </div>
+      <hr>
+    </section >
+
+    <section id="section2">
+      <div class="container">
+        <p id=sec2p>The moratoriums are intended to protect vulnerable people put out of work by the pandemic and help curb the spread of the coronavirus. While it is hard to argue the importance of these measures,
+           the eviction ban has also put a pinch on “mom and pop” landlords who depend on collecting rent to meet mortgage payments, and who are no longer allowed to evict tenants who do not pay. In September,
+           <a href="https://www.startribune.com/landlords-go-to-court-to-fight-gov-walz-s-eviction-moratorium/573324851/?refresh=true" target="_blank">an injunction was filed with U.S. District Judge Nancy Brasel</a>
+           to overturn the moratorium, and some corporate landlords able to afford more legal clout have been aggressively trying to evict certain tenants.</p>
+        <figure>
+          <img id="strib1" src="img/evictionstartrib.jpg" style="width: 150%" alt="Photo credit: Anthony Souffle, Star Tribune">
+          <figcaption style="font-size: 0.7rem" >Anthony Souffle, Star Tribune</figcaption>
+        </figure>
+
+      </div>
+    </section>
+    <hr>
+    <div class="container">
+      <iframe src="https://www.youtube.com/embed/3QkjdMlifC0" width="750" height="515" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+
+    <p id="sankeydesc">Not all eviction filings end in the removal of the tenant. The graphic below displays the result of all eviction filings that occurred in Hennepin County in 2018:</p>
+    <img src="img/eviction-flow-illustration-2018-legal.png" style="width: 80%" alt="eviction flow diagram" class="center">
+
+    <hr>
+
+    <p class="p3">According to <a href="https://evictionlab.org/one-year-of-eviction-moratoria/" target="_blank">research by Eviction Lab,</a>
+      Minnesota’s state-level eviction protections are some of the strongest in the nation. Despite that, under the letter of the law, the following exceptions can still be used to justify evicting a tenant:</p>
+    <ul>
+      <li>The tenant puts anyone's safety in danger;</li>
+      <li>The tenant causes property damage;</li>
+      <li>The landlord may end the lease if they or their family members plan to live in the property.</li>
+    </ul>
+
+    <hr>
+
+    <div class="container">
+      <p>Under the executive order, the number of evictions recorded in Minnesota dropped from around 7,500 in 2019 to around 1,500 in 2020. Use the map below and the associated census data to explore and compare racial and socioeconomic distributions:</p>
+    </div>
+    <!-- ROW FOR ACCORDION LEGEND, MAP, AND RETRIEVE PANEL COLUMNS -->
+
+      <div class="container">
+            <div class="accordion" id="accordionSection">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" id="button2019" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <a class="collapsed1" href="#collapsed1">Evictions per Census Tract, 2019</a>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSection">
+                  <div class="accordion-body">
+                    <img src="./img/legend2019_1.png" style="width: 100%">
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" id="button2020" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <a class="collapsed2" href="#collapsed2">Evictions per Census Tract, 2020</a>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSection">
+                  <div class="accordion-body">
+                    <img src="./img/legend2020_1.png" style="width: 100%">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-column">
+              <div class="map-container"></div>
+            </div>
+
+            <div class="retrieveContainer">
+              <div class="retrievePanel">
+                <p id="retrieveTitle" style="color: white">
+                  Hover over a census tract:
+                </p>
+              </div>
+            </div>
+
+    </div>
+    <!-- end of accordion, map, and text retrieve container -->
+
+    <hr>
+    <div class="container">
+      <p>To quote Matthew Desmond, founder of Eviction Lab and professor of Sociology at Princeton, “eviction [is] incredibly prevalent in low-income communities and [has] functioned as a cause, not just a condition, of poverty.” Here, an examination of the data reveals one census tract as a clear outlier: 124 evictions in 2019, nearly double the next highest count, and again with significantly more evictions in 2020 than anywhere else in the state.
+         Perhaps unsurprisingly, the census tract is majority-Black and impoverished, and while a deeper examination of the ties between eviction, poverty, and racism is beyond the scope of this project,
+         it is worth noting that the widely publicized recent <a href="https://en.wikipedia.org/wiki/Killing_of_Daunte_Wright">killing of Daunte Wright</a> occurred just blocks away from this census tract.</p>
+    </div>
+
+    <hr>
+    <h6>What happens once the ban on evictions is lifted?</h6>
+    <div class="container">
+
+      <p>Despite the eviction ban, tenants are not relieved of their obligation to pay back rent owed. As of March 2021, an estimated 100,000 households behind on rent payments owe a combined $200 million. Now, with an end to Minnesota’s eviction moratorium beginning to come into view, tenants months behind on payments are fearing impending homelessness while
+        <a href="https://www.startribune.com/minnesota-legislators-debate-eviction-ban-off-ramp-as-tenants-fear-homelessness/600033988/?refresh=true" target="_blank">legislators debate a way forward</a>. While hundreds of millions in federal aid money is on the way, whether it will be enough to stem wide-scale homelessness in the medium to long term remains to be seen.</p>
+    </div>
+
+    <div class="bottom-container">
+      <h3>Eviction Info and Housing Assistance Resources:</h3>
+      <a class="footer-link" href="https://evictionlab.org/" target="_blank">Eviction Lab</a>
+      <a class="footer-link "href="https://www.211unitedway.org/" target="_blank">United Way 2-1-1</a>
+      <a class="footer-link" href="https://justshelter.org/" target="_blank">Just Shelter</a>
+      <a class="footer-link" href="https://www.youtube.com/watch?v=KbvPnyYlb0w" target="_blank">Law Help MN Info Video</a>
+      <p class="endcredit"> <em>Created by Galen Kanazawa, University of Wisconsin-Madison, Spring 2021</em> </p>
+    </div>
+
+
+    <!--libraries-->
+    <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
+		<!-- <script type="text/javascript" src="lib/d3-selection-multi.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://d3js.org/d3-zoom.v2.min.js"></script> -->
+    <script type="text/javascript" src="lib/d3.js"></script>
+		<script type="text/javascript" src="lib/topojson.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/d3-tile/d3-tile.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/simple-statistics@7.7.0/dist/simple-statistics.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!--main script-->
+		<script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
